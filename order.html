@@ -11,45 +11,188 @@
     />
   </head>
   <body>
-    <header>
-      <img
-        src="images/twice_favicon.jpg"
-        width="200px"
-        alt="The TWICE logo - RTB variant"
-      />
-      <nav>
-        <div>
-          <a href="https://en.thejypshop.com/category/merch/82/" target="_blank"
-            >Merch</a
-          >
-          <a href="https://en.thejypshop.com/category/music/45/" target="_blank"
-            >Music</a
-          >
-          <a
-            href="https://en.thejypshop.com/category/lovely/76/"
-            target="_blank"
-            >Lovely</a
-          >
-          <a
-            href="https://en.thejypshop.com/board/event/list.html?board_no=21&category_no=1"
-            target="_blank"
-            >Event</a
-          >
-          <a
-            href="https://en.thejypshop.com/board/twice-%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD/14/"
-            target="_blank"
-            >Notice</a
-          >
-          <a
-            href="https://en.thejypshop.com/product/project/collection_TW_7TH_ANNIVERSARY.html"
-            target="_blank"
-            >7th Anniversary</a
-          >
-        </div>
-      </nav>
-    </header>
-    <section id="slider">
-      <img src="images/twice_store banner.png" alt="store banner" />
-    </section>
+    <center>
+      <header>
+        <img
+          src="images/twice_favicon.jpg"
+          width="200px"
+          alt="The TWICE logo - RTB variant"
+        />
+        <nav>
+          <div>
+            <a
+              href="https://en.thejypshop.com/category/merch/82/"
+              target="_blank"
+              >Merch</a
+            >
+            <a
+              href="https://en.thejypshop.com/category/music/45/"
+              target="_blank"
+              >Music</a
+            >
+            <a
+              href="https://en.thejypshop.com/category/lovely/76/"
+              target="_blank"
+              >Lovely</a
+            >
+            <a
+              href="https://en.thejypshop.com/board/event/list.html?board_no=21&category_no=1"
+              target="_blank"
+              >Event</a
+            >
+            <a
+              href="https://en.thejypshop.com/board/twice-%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD/14/"
+              target="_blank"
+              >Notice</a
+            >
+            <a
+              href="https://en.thejypshop.com/product/project/collection_TW_7TH_ANNIVERSARY.html"
+              target="_blank"
+              >7th Anniversary</a
+            >
+          </div>
+        </nav>
+      </header>
+      <section id="slider">
+        <img src="images/twice_store banner.png" alt="store banner" />
+      </section>
+      <section id="order" style="width: 600px">
+        <form
+          action="form-processing"
+          method="post"
+          enctype="application/x-www-form-urlencoded"
+        >
+          <fieldset>
+            <legend>
+              Please fill out your <strong>personal</strong> information:
+            </legend>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="First Name"
+              required
+            /><br /><br />
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="Last Name"
+              required
+            /><br /><br />
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob" />
+          </fieldset>
+
+          <fieldset>
+            <legend>
+              Please fill out your <strong>shipping</strong> information:
+            </legend>
+            <input
+              type="text"
+              id="streetadd"
+              name="streetadd"
+              placeholder="Street Address"
+              required
+            /><br /><br />
+
+            <label for="dist">District:</label>
+            <select name="dist" id="dist">
+              <option value="Q1">District 1</option>
+              <option value="Q2">District 2</option>
+              <option value="Q3">District 3</option>
+              <option value="Q4">District 4</option>
+              <option value="Q5">District 5</option>
+              <option value="Q6">District 6</option>
+              <option value="Q7">District 7</option>
+              <option value="Q8">District 8</option>
+              <option value="Q9">District 9</option>
+              <option value="Q10">District 10</option>
+              <option value="Q11">District 11</option>
+              <option value="Q12">District 12</option>
+              <option value="BinhThanh">Binh Thanh District</option>
+              <option value="ThuDuc">Thu Duc District</option>
+              <option value="GoVap">Go Vap District</option>
+              <option value="TanBinh">Tan Binh District</option>
+              <option value="TanPhu">Tan Phu District</option>
+              <option value="PhuNhuan">Phu Nhuan District</option>
+              <option value="BinhTan">Binh Tan District</option>
+            </select>
+            <br /><br />
+            <label for="pnumber">Phone:</label>
+            <input
+              type="tel"
+              id="pnumber"
+              name="pnumber"
+              pattern="09\d{0,8}"
+              placeholder="09xxxxxxxx"
+              required
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Please select your products:</legend>
+            <input type="checkbox" name="product" id="album" value="album" />
+            <label for="album">TWICE 12th Mini Album - READY TO BE</label>
+            <br /><br />
+            <input
+              type="checkbox"
+              name="product"
+              id="lightstick"
+              value="lightstick"
+            />
+            <label for="lightstick">TWICE CANDYBONG ∞</label>
+            <br /><br />
+            <input type="checkbox" name="product" id="tshirt" value="tshirt" />
+            <label for="tshirt">TWICE T-SHIRT</label>
+            <br /><br />
+            <input type="checkbox" name="product" id="nayeon" value="nayeon" />
+            <label for="nayeon">NAYEON LOVELY KEYRING</label>
+            <br /><br />
+            <input
+              type="checkbox"
+              name="product"
+              id="jeongyeon"
+              value="jeongyeon"
+            />
+            <label for="jeongyeon">JEONGYEON CHIFFON FABRIC POSTER SET</label>
+            <br /><br />
+            <input type="checkbox" name="product" id="momo" value="momo" />
+            <label for="momo">MOMO SOJU CUP SET</label>
+            <br /><br />
+            <input type="checkbox" name="product" id="sana" value="sana" />
+            <label for="sana">SANA KNIT BUCKET HAT</label>
+            <br /><br />
+            <input type="checkbox" name="product" id="jihyo" value="jihyo" />
+            <label for="jihyo">JIHYO FUR POUCH</label>
+            <br /><br />
+            <input type="checkbox" name="product" id="mina" value="mina" />
+            <label for="mina">MINA FOLDING MIRROR</label>
+            <br /><br />
+            <input type="checkbox" name="product" id="dahyun" value="dahyun" />
+            <label for="dahyun">DAHYUN DUB MAT VER.2</label>
+            <br /><br />
+            <input
+              type="checkbox"
+              name="product"
+              id="chaeyoung"
+              value="chaeyoung"
+            />
+            <label for="chaeyoung">CHAEYOUNG LOCKET PENDANT</label>
+            <br /><br />
+            <input type="checkbox" name="product" id="tzuyu" value="tzuyu" />
+            <label for="album">TZUYU RESUABLE CUP</label>
+          </fieldset>
+          <br />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+      <footer>
+        <center>
+          <h3>© Copyright 2023 by VNOsST and JYP Entertainment</h3>
+        </center>
+      </footer>
+    </center>
   </body>
 </html>
