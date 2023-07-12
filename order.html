@@ -13,11 +13,12 @@
   <body>
     <center>
       <header>
-        <img
-          src="images/twice_favicon.jpg"
-          width="200px"
-          alt="The TWICE logo - RTB variant"
-        />
+        <a href="index.html">
+          <img
+            src="images/twice_favicon.jpg"
+            width="200px"
+            alt="The TWICE logo - RTB variant"
+        /></a>
         <nav>
           <div>
             <a
@@ -25,26 +26,31 @@
               target="_blank"
               >Merch</a
             >
+            &nbsp;
             <a
               href="https://en.thejypshop.com/category/music/45/"
               target="_blank"
               >Music</a
             >
+            &nbsp;
             <a
               href="https://en.thejypshop.com/category/lovely/76/"
               target="_blank"
               >Lovely</a
             >
+            &nbsp;
             <a
               href="https://en.thejypshop.com/board/event/list.html?board_no=21&category_no=1"
               target="_blank"
               >Event</a
             >
+            &nbsp;
             <a
               href="https://en.thejypshop.com/board/twice-%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD/14/"
               target="_blank"
               >Notice</a
             >
+            &nbsp;
             <a
               href="https://en.thejypshop.com/product/project/collection_TW_7TH_ANNIVERSARY.html"
               target="_blank"
@@ -63,7 +69,7 @@
           enctype="application/x-www-form-urlencoded"
         >
           <fieldset>
-            <legend>
+            <legend style="width: auto; margin-left: auto; margin-right: auto">
               Please fill out your <strong>personal</strong> information:
             </legend>
             <input
@@ -86,7 +92,7 @@
           </fieldset>
 
           <fieldset>
-            <legend>
+            <legend style="width: auto; margin-left: auto; margin-right: auto">
               Please fill out your <strong>shipping</strong> information:
             </legend>
             <input
@@ -99,6 +105,7 @@
 
             <label for="dist">District:</label>
             <select name="dist" id="dist">
+              <option value="" disabled selected hidden>District</option>
               <option value="Q1">District 1</option>
               <option value="Q2">District 2</option>
               <option value="Q3">District 3</option>
@@ -120,19 +127,30 @@
               <option value="BinhTan">Binh Tan District</option>
             </select>
             <br /><br />
-            <label for="pnumber">Phone:</label>
+            <label for="pnumber">Phone number:</label>
             <input
               type="tel"
               id="pnumber"
               name="pnumber"
-              pattern="09\d{0,8}"
-              placeholder="09xxxxxxxx"
+              pattern="0\d{0,9}"
+              placeholder="012-345-6789"
+              required
+            />
+            <br />
+            <br />
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="Email Address"
               required
             />
           </fieldset>
 
           <fieldset>
-            <legend>Please select your products:</legend>
+            <legend style="width: auto; margin-left: auto; margin-right: auto">
+              Please select your products:
+            </legend>
             <input type="checkbox" name="product" id="album" value="album" />
             <label for="album">TWICE 12th Mini Album - READY TO BE</label>
             <br /><br />
@@ -185,8 +203,49 @@
             <label for="album">TZUYU RESUABLE CUP</label>
           </fieldset>
           <br />
-          <input type="submit" value="Submit" />
+          <input
+            type="submit"
+            value="Submit"
+            style="background-color: #ff5fa2; color: white; font-weight: bold"
+          />
         </form>
+      </section>
+      <section id="Videos">
+        <table>
+          <tr>
+            <td>
+              <center>
+                <h2>Check out our newest M/V!</h2>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/w4cTYnOPdNk"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </center>
+            </td>
+            <td>
+              <center>🎵🎵🎵</center>
+            </td>
+            <td>
+              <center>
+                <h2>Get to know the members!</h2>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/US2orZv7yE8"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </center>
+            </td>
+          </tr>
+        </table>
       </section>
       <footer>
         <center>
